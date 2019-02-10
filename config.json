@@ -11,11 +11,11 @@
     "vinbero_mt": {
         "paths": ["/usr/local/lib/vinbero_mt.so", "/usr/lib/vinbero/vinbero_mt.so"],
         "config": {"vinbero_mt.workerCount": 4},
-        "next": ["vinbero_tcp_mt_epoll"]
+        "next": ["vinbero_strm_mt_epoll"]
     },
-    "vinbero_tcp_mt_epoll": {
-        "paths": ["/usr/local/lib/vinbero_tcp_mt_epoll.so", "/usr/lib/vinbero/vinbero_tcp_mt_epoll.so"],
-        "config": {"vinbero_tcp_mt_epoll.clientTimeoutSeconds": 3},
+    "vinbero_strm_mt_epoll": {
+        "paths": ["/usr/local/lib/vinbero_strm_mt_epoll.so", "/usr/lib/vinbero/vinbero_strm_mt_epoll.so"],
+        "config": {"vinbero_strm_mt_epoll.clientTimeoutSeconds": 3},
         "next": ["vinbero_mt_epoll_http"]
     },
     "vinbero_mt_epoll_http": {
